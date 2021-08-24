@@ -8,6 +8,7 @@ use App\Http\Controllers\ContactListController;
 use App\Http\Controllers\SiteInfoController;
 use App\Http\Controllers\CategoryDetailsController;
 use App\Http\Controllers\ProductListController;
+use App\Http\Controllers\SliderController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -34,3 +35,5 @@ Route::get('/ProductListByRemark/{remark}', [ProductListController::class, 'Prod
 
 Route::get('/ProductListByCategory/{category}', [ProductListController::class, 'ProductListByCategory']);
 Route::get('/ProductListBySubCategory/{category}/{subcategory}', [ProductListController::class, 'ProductListByCategory']);
+
+Route::get('/SendSliderInfo', [SliderController::class, 'SendSliderInfo']);
