@@ -9,6 +9,7 @@ use App\Http\Controllers\SiteInfoController;
 use App\Http\Controllers\CategoryDetailsController;
 use App\Http\Controllers\ProductListController;
 use App\Http\Controllers\SliderController;
+use App\Http\Controllers\ProductDetailsController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -37,3 +38,5 @@ Route::get('/ProductListByCategory/{category}', [ProductListController::class, '
 Route::get('/ProductListBySubCategory/{category}/{subcategory}', [ProductListController::class, 'ProductListByCategory']);
 
 Route::get('/SendSliderInfo', [SliderController::class, 'SendSliderInfo']);
+
+Route::get('/ProductDetails/{code}', [ProductDetailsController::class,'ProductDetails']);
