@@ -42,3 +42,5 @@ Route::get('/SendSliderInfo', [SliderController::class, 'SendSliderInfo']);
 Route::get('/ProductDetails/{code}', [ProductDetailsController::class,'ProductDetails']);
 
 Route::get('/NotificationHistory',[NotificationController::class,'NotificationHistory']);
+
+Route::get('/ProductBySearch/{key}',[ProductListController::class,'ProductBySearch']);
